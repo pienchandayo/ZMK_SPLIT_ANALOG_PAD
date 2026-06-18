@@ -27,13 +27,13 @@
         // 既存の行列マトリックスを composite に割り当て (row_offset = 0)
         matrix {
             kscan = <&kscan0>;
+            col-offset = <7>;
         };
 
         // ダイレクトピンを composite の新しい行（一番下の行など）に割り当て
         // ここでは行列マトリックスが5行（0〜4）あると仮定して、5行目の0列目にマージしています
         direct {
             kscan = <&kscan_direct>;
-            row-offset = <0>;
             column-offset = <14>;
         };
     };
@@ -106,8 +106,4 @@
         , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;    
-};
-
-&default_transform { // Offset of 3 because the left side has 3 columns
-    col-offset = <7>;
 };
