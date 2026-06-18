@@ -1,5 +1,5 @@
 include:
-  - board: nice_nano@2.0.0//zmk
+  - board: nice_nano//zmk
     shield: my_kb_left
     west-config-path: config/west.yml
   - board: nice_nano//zmk
