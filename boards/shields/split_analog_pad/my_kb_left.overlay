@@ -19,4 +19,4 @@
         , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;    
-}
+};

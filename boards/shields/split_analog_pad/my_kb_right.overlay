@@ -22,7 +22,7 @@
         , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;    
-}
+};
 
 &default_transform { // Offset of 3 because the left side has 3 columns
     col-offset = <7>;
