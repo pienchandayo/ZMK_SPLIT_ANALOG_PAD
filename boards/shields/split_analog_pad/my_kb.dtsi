@@ -3,6 +3,7 @@
     chosen {
         zmk,matrix-transform = &default_transform;
         zmk,physical-layout = &default_layout;
+        zmk,kscan = &kscan0;
     };
     default_layout: default_layout {
         compatible = "zmk,physical-layout";
