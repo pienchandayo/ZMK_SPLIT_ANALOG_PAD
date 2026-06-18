@@ -30,7 +30,7 @@
 
         direct {
             kscan = <&kscan_direct>;
-            column-offset = <14>;
+            col-offset = <14>;
         };
     };
     //アナログパッドの設定
