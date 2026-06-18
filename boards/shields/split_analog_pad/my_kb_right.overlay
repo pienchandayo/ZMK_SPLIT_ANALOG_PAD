@@ -27,7 +27,7 @@
         // 既存の行列マトリックスを composite に割り当て (row_offset = 0)
         matrix {
             kscan = <&kscan0>;
-            col-offset = <6>;
+            col-offset = <7>;
         };
 
         // ダイレクトピンを composite の新しい行（一番下の行など）に割り当て
