@@ -1,0 +1,20 @@
+/ {
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+    };
+    default_transform: default_transform {
+        compatible = "zmk,matrix-transform";
+        columns = <14>; 
+        rows = <5>;
+        map = <
+            /* 左手 (トランスフォームの後半 7〜13列目)                        右手 (トランスフォームの前半 0〜6列目) */
+            MAP(0,7) MAP(0,8) MAP(0,9) MAP(0,10) MAP(0,11) MAP(0,12) MAP(0,13)   MAP(0,0) MAP(0,1) MAP(0,2) MAP(0,3) MAP(0,4) MAP(0,5) MAP(0,6)   
+            MAP(1,7) MAP(1,8) MAP(1,9) MAP(1,10) MAP(1,11) MAP(1,12) MAP(1,13)   MAP(1,0) MAP(1,1) MAP(1,2) MAP(1,3) MAP(1,4) MAP(1,5) MAP(1,6)
+            MAP(2,7) MAP(2,8) MAP(2,9) MAP(2,10) MAP(2,11) MAP(2,12) MAP(2,13)   MAP(2,0) MAP(2,1) MAP(2,2) MAP(2,3) MAP(2,4) MAP(2,5) MAP(2,6)
+            MAP(3,7) MAP(3,8) MAP(3,9) MAP(3,10) MAP(3,11) MAP(3,12) MAP(3,13)   MAP(3,0) MAP(3,1) MAP(3,2) MAP(3,3) MAP(3,4) MAP(3,5) MAP(3,6)
+            MAP(4,7) MAP(4,8) MAP(4,9) MAP(4,10) MAP(4,11) MAP(4,12) MAP(4,13)   MAP(4,0) MAP(4,1) MAP(4,2) MAP(4,3) MAP(4,4) MAP(4,5) MAP(4,6) 
+        >;
+    };
+};
