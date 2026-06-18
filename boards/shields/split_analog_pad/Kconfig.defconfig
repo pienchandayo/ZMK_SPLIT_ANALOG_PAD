@@ -5,11 +5,11 @@ config ZMK_KEYBOARD_NAME
     default "My Keyboard"
 endif
 
-endif
+
 if SHIELD_MY_KEYBOARD_LEFT
 config ZMK_SPLIT_ROLE_CENTRAL
     default n
-
+endif
 if SHIELD_MY_KEYBOARD_LEFT || SHIELD_MY_KEYBOARD_RIGHT
 
 config ZMK_SPLIT
