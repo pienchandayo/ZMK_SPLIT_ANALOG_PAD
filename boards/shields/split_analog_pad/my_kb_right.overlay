@@ -33,8 +33,8 @@
         // ここでは行列マトリックスが5行（0〜4）あると仮定して、5行目の0列目にマージしています
         direct {
             kscan = <&kscan_direct>;
-            row-offset = <14>;
-            column-offset = <0>;
+            row-offset = <0>;
+            column-offset = <14>;
         };
     };
     //アナログパッドの設定
