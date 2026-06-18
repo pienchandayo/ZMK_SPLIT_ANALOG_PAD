@@ -21,8 +21,8 @@
         label = "KSCAN_COMPOSITE";
         // 物理キーマップ（matrix-transform）の行・列と一致させるための全体のサイズ
         // 通常の行列が 5行×7列（計35）なら、ダイレクトピンは36番目（row=5, col=0など）に配置するイメージです
-        rows = <6>; 
-        columns = <7>;
+        rows = <5>; 
+        columns = <15>;
 
         // 既存の行列マトリックスを composite に割り当て (row_offset = 0)
         matrix {
