@@ -2,13 +2,21 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: badjeff
+      url-base: https://github.com/badjeff
     - name: oleksandrmaslov
       url-base: https://github.com/oleksandrmaslov      
+
   projects:
-    - name: zmk-pointing-acceleration
-      remote: oleksandrmaslov
-      revision: main
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: zmk-analog-input-driver
+      remote: badjeff
+      revision: main
+    - name: zmk-pointing-acceleration
+      remote: oleksandrmaslov
+      revision: main
+  self:
+    path: config
