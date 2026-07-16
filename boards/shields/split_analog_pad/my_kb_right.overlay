@@ -65,10 +65,10 @@
         #input-processor-cells = <0>;
         input-type = <INPUT_EV_REL>; 
         min-factor = <500>;
-        max-factor = <1500>;
-        speed-threshold = <2000>;
-        speed-max = <7000>;
-        acceleration-exponent = <1>;
+        max-factor = <5000>;
+        speed-threshold = <3500>;
+        speed-max = <5000>;
+        acceleration-exponent = <2>;
         track-remainders;
     };
 
