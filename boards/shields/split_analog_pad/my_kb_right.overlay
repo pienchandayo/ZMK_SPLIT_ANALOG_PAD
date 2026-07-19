@@ -78,18 +78,7 @@
         device = <&anin0>;
         input-processors = <&pointer_accel>;
     };
-    vbatt: vbatt {
-        compatible = "zmk,battery-voltage-divider";
-        label = "BATTERY";
-        io-channels = <&adc 7>; /* P0.31 = AIN7 */
-        output-ohms = <820000>;  /* R2 = 820kΩ */
-        full-ohms = <1820000>;   /* R1 + R2 = 1.82MΩ */
-    };
 
-    /* ZMKにバッテリーとして認識させる */
-    chosen {
-        zmk,battery = &vbatt;
-    };
 };
 
 &adc {
